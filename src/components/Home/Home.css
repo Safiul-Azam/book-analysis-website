@@ -1,0 +1,9 @@
+.book-container{
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-info{
+    text-align: left;
+}
