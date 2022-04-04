@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: lightgreen ;
+    color: #333333;
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+.menu-bar a{
+   margin:20px;
+    text-decoration: none;
+    font-weight: 600;
+    color:#333333
+}
+.color{
+    color: #f23534;
+}
