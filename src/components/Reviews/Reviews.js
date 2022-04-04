@@ -1,24 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React  from 'react';
+
 import useReviews from '../../hooks/useReviews';
-import Review from '../Review/Review';
+import AllReview from '../AllReview/AllReview';
+
 import './Reviews.css'
 
 const Reviews = () => {
     const [reviews, setReviews] = useReviews()
-    const navigate = useNavigate()
-    const handleReview = () => {
-        navigate(`/reviews`)
-    }
     return (
         <div>
+             <h2>রিভিউ এবং রেটিং - বেলা ফুরাবার আগে</h2>
            <div className='reviews-container'>
            {
-                reviews.map(review => <Review review={review}></Review>)
+               reviews.map(review => <AllReview review={review}></AllReview>)
             }
            </div>
-        
-            <button onClick={handleReview} className='see-btn'>See all reviews</button>
+            
+            
         </div>
     );
 };

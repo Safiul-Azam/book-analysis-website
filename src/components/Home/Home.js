@@ -1,8 +1,12 @@
 import React from 'react';
+import useReviews from '../../hooks/useReviews';
+import HandleReview from '../HandleReview/HandleReview';
+import Review from '../Review/Review';
 import Reviews from '../Reviews/Reviews';
 import './Home.css'
 
 const Home = () => {
+    const [reviews, setReviews] = useReviews()
     return (
         <div>
             <div className='book-container'>
@@ -14,7 +18,13 @@ const Home = () => {
             <img src="bela.png" alt="" />
             </div>
             </div>
-            <Reviews></Reviews>
+            <h2>রিভিউ এবং রেটিং - বেলা ফুরাবার আগে</h2>
+           <div className='reviews-container'>
+           {
+               reviews.slice(0,3).map(review => <Review review={review}></Review>)
+            }
+           </div>
+           <HandleReview></HandleReview>
         </div>
     );
 };
