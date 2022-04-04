@@ -1,0 +1,14 @@
+.reviews-container{
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.see-btn{
+    padding: 10px 30px;
+    margin-bottom: 50px;
+    border: none;
+    background-color: lightgreen;
+    color:#333;
+    font-weight: 600;
+    font-size: 16px;
+}

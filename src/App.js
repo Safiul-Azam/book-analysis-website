@@ -15,6 +15,12 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/dashboard' element={<DashBoard></DashBoard>}></Route>
+        <Route path='*' element={
+          <div>
+            <h2>page not found</h2>
+            <h1>404</h1>
+          </div>
+        }></Route>
       </Routes>
     </div>
   );
