@@ -16,6 +16,7 @@ function App() {
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/dashboard' element={<DashBoard></DashBoard>}></Route>
         <Route path='/questionAndAnswer' element={<QuestionAns></QuestionAns>}></Route>
+        
         <Route path='*' element={
           <div>
             <h2>page not found</h2>
