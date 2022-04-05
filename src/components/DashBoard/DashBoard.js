@@ -10,6 +10,7 @@ const DashBoard = () => {
     },[])
     return (
  <div>
+     {/* area chart with tooltip */}
      <div>
      <AreaChart width={730} height={250} data={rechart}
   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
@@ -32,12 +33,15 @@ const DashBoard = () => {
   <Area type="monotone" dataKey={'revenue'} stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
 </AreaChart>
      </div>
+     {/* pie chart with tooltip */}
      <div>
      <PieChart width={730} height={250}>
   <Pie data={rechart} dataKey="sell" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
   <Pie data={rechart} dataKey="investment" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
+  <Tooltip />
 </PieChart>
      </div>
+     {/* bar chart with tooltip */}
      <div>
      <BarChart width={730} height={250} data={rechart}>
   <CartesianGrid strokeDasharray="3 3" />

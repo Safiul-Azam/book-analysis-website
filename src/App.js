@@ -4,7 +4,7 @@ import Home from './components/Home/Home';
 import Reviews from './components/Reviews/Reviews';
 import DashBoard from './components/DashBoard/DashBoard';
 import Header from './components/Header/Header';
-import AboutBook from './components/Aboutbook/AboutBook';
+import QuestionAns from './components/QuestionAns/QuestionAns';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/dashboard' element={<DashBoard></DashBoard>}></Route>
+        <Route path='/questionAndAnswer' element={<QuestionAns></QuestionAns>}></Route>
         <Route path='*' element={
           <div>
             <h2>page not found</h2>
